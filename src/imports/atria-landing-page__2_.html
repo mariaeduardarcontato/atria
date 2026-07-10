@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atria — Consultoria de Anúncios para Empresárias</title>
+<meta name="description" content="Uma consultoria individual para empresárias que querem usar anúncios para atrair clientes qualificados todos os dias, com segurança e sem depender de agências.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          dark: '#4d240c',
+          light: '#fffdf9',
+        },
+        fontFamily: {
+          sans: ['Manrope', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; }
+
+  .divider {
+    width: 48px;
+    height: 2px;
+    background-color: #4d240c;
+    opacity: 0.35;
+  }
+
+  .cta-btn {
+    transition: opacity 0.25s ease, box-shadow 0.25s ease;
+  }
+  .cta-btn:hover {
+    opacity: 0.85;
+  }
+  .cta-btn:focus-visible {
+    outline: 2px solid #4d240c;
+    outline-offset: 3px;
+  }
+
+  .step-card {
+    transition: border-color 0.25s ease;
+  }
+</style>
+</head>
+
+<body class="bg-light text-dark antialiased">
+
+  <!-- ===================== HEADER (FAIXA) ===================== -->
+  <header class="w-full py-6 px-6 md:px-12 bg-dark">
+    <div class="max-w-6xl mx-auto flex justify-center md:justify-start">
+      <!-- LOGO: substitua o src abaixo pela imagem final da Atria (use a versão clara/off-white da logo, já que o fundo é escuro) -->
+      <img src="SUBSTITUA_PELO_CAMINHO_DA_LOGO_ATRIA.png" alt="Atria" class="h-8 md:h-9 w-auto">
+    </div>
+  </header>
+
+  <!-- ===================== HERO (DOBRA 1) ===================== -->
+  <section class="px-6 md:px-12 bg-light text-dark">
+    <div class="max-w-3xl mx-auto text-center py-16 md:py-28 flex flex-col items-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl leading-snug md:leading-tight font-semibold tracking-tight">
+        Uma consultoria individual para empresárias que querem usar anúncios para atrair clientes qualificados todos os dias, com segurança e sem depender de agências.
+      </h1>
+
+      <a href="#formulario"
+         class="cta-btn mt-10 inline-block bg-dark text-light text-base md:text-lg font-medium px-8 py-4 rounded-md w-full sm:w-auto">
+        Quero aplicar para a consultoria
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== DOBRA 2: PROBLEMA / SOLUÇÃO ===================== -->
+  <section class="px-6 md:px-12 bg-dark text-light">
+    <div class="max-w-5xl mx-auto py-16 md:py-28">
+
+      <p class="text-sm md:text-base tracking-[0.2em] uppercase text-light/55 font-semibold text-center mb-5">
+        O problema
+      </p>
+
+      <h2 class="text-2xl md:text-4xl font-semibold tracking-tight leading-snug md:leading-tight mb-6 text-center max-w-3xl mx-auto">
+        Você sabe que o seu produto é bom, o problema é que as pessoas certas não estão vendo.
+      </h2>
+
+      <p class="text-base md:text-lg leading-relaxed text-light/80 text-center mb-14">
+        Muitas empresárias ficam estagnadas porque:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6 mb-14">
+        <div class="border border-light/20 rounded-lg p-6 md:p-7 bg-light/[0.04]">
+          <span class="block text-2xl mb-3 leading-none">↻</span>
+          <p class="text-base md:text-lg leading-relaxed">
+            Estão exaustas de produzir conteúdo todos os dias e depender da boa vontade do algoritmo para vender.
+          </p>
+        </div>
+        <div class="border border-light/20 rounded-lg p-6 md:p-7 bg-light/[0.04]">
+          <span class="block text-2xl mb-3 leading-none">⚠</span>
+          <p class="text-base md:text-lg leading-relaxed">
+            Sabem que precisam investir em tráfego, mas têm medo de apertar o botão errado e rasgar dinheiro.
+          </p>
+        </div>
+        <div class="border border-light/20 rounded-lg p-6 md:p-7 bg-light/[0.04]">
+          <span class="block text-2xl mb-3 leading-none">✂</span>
+          <p class="text-base md:text-lg leading-relaxed">
+            Já tentaram impulsionar posts, mas só atraíram curiosos pedindo desconto.
+          </p>
+        </div>
+        <div class="border border-light/20 rounded-lg p-6 md:p-7 bg-light/[0.04]">
+          <span class="block text-2xl mb-3 leading-none">✕</span>
+          <p class="text-base md:text-lg leading-relaxed">
+            Não têm caixa para pagar a mensalidade de um gestor de tráfego agora, mas precisam crescer.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-2xl mx-auto text-center border-t border-light/25 pt-10">
+        <p class="text-lg md:text-xl leading-relaxed font-medium">
+          Se você quer previsibilidade de caixa e autonomia para trazer clientes para a sua empresa, a <span class="whitespace-nowrap">ATRIA</span> é o seu atalho.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== DOBRA 3: COMO FUNCIONA ===================== -->
+  <section class="px-6 md:px-12 bg-light text-dark">
+    <div class="max-w-4xl mx-auto py-16 md:py-24">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-center mb-14">
+        Como a consultoria funciona:
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+
+        <div class="step-card bg-white border border-dark/10 rounded-lg p-7 md:p-8 shadow-[0_8px_24px_-12px_rgba(77,36,12,0.18)]">
+          <span class="block text-sm font-semibold tracking-widest text-dark/50 mb-3">01</span>
+          <h3 class="text-lg md:text-xl font-semibold mb-3">A parte técnica chata (Eu faço por você)</h3>
+          <p class="text-base leading-relaxed text-dark/85">
+            Antes do nosso primeiro encontro, eu configuro toda a sua conta de anúncios, vinculo seu Instagram e arrumo a casa. Você não precisa apertar nenhum botão difícil.
+          </p>
+        </div>
+
+        <div class="step-card bg-white border border-dark/10 rounded-lg p-7 md:p-8 shadow-[0_8px_24px_-12px_rgba(77,36,12,0.18)]">
+          <span class="block text-sm font-semibold tracking-widest text-dark/50 mb-3">02</span>
+          <h3 class="text-lg md:text-xl font-semibold mb-3">Encontro 1: Estratégia</h3>
+          <p class="text-base leading-relaxed text-dark/85">
+            Nós definimos qual produto vamos vender e para quem. Depois da nossa call, eu te direciono exatamente no que você precisa gravar para os seus anúncios.
+          </p>
+        </div>
+
+        <div class="step-card bg-white border border-dark/10 rounded-lg p-7 md:p-8 shadow-[0_8px_24px_-12px_rgba(77,36,12,0.18)]">
+          <span class="block text-sm font-semibold tracking-widest text-dark/50 mb-3">03</span>
+          <h3 class="text-lg md:text-xl font-semibold mb-3">Encontro 2: Mão na massa</h3>
+          <p class="text-base leading-relaxed text-dark/85">
+            Com os seus vídeos prontos, nós abrimos o Gerenciador de Anúncios juntas. Eu te guio clique a clique para subirmos a sua campanha com total segurança.
+          </p>
+        </div>
+
+        <div class="step-card bg-white border border-dark/10 rounded-lg p-7 md:p-8 shadow-[0_8px_24px_-12px_rgba(77,36,12,0.18)]">
+          <span class="block text-sm font-semibold tracking-widest text-dark/50 mb-3">04</span>
+          <h3 class="text-lg md:text-xl font-semibold mb-3">Encontro 3: Análise e Próximos Passos</h3>
+          <p class="text-base leading-relaxed text-dark/85">
+            Com a campanha rodando, lemos os números juntas. Te ensino a ver o que deu lucro, pausar o que ficou caro e te entrego o seu plano de ação para os próximos meses.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOBRA 4: RESUMO E PREÇO ===================== -->
+  <section class="px-6 md:px-12 bg-dark text-light">
+    <div class="max-w-2xl mx-auto py-16 md:py-24">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-center mb-10">
+        O que está incluso na consultoria:
+      </h2>
+
+      <div class="bg-light text-dark rounded-xl p-8 md:p-12 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.45)]">
+        <ul class="space-y-4 mb-10">
+          <li class="flex gap-3 text-base md:text-lg leading-relaxed">
+            <span>✔️</span><span>Configuração técnica da sua conta de anúncios</span>
+          </li>
+          <li class="flex gap-3 text-base md:text-lg leading-relaxed">
+            <span>✔️</span><span>3 encontros individuais comigo (Zoom)</span>
+          </li>
+          <li class="flex gap-3 text-base md:text-lg leading-relaxed">
+            <span>✔️</span><span>Direcionamento e roteiros para os seus anúncios</span>
+          </li>
+          <li class="flex gap-3 text-base md:text-lg leading-relaxed">
+            <span>✔️</span><span>Plano de ação final em PDF (Dossiê ATRIA)</span>
+          </li>
+          <li class="flex gap-3 text-base md:text-lg leading-relaxed">
+            <span>✔️</span><span>Bônus: 40 dias de suporte direto no meu WhatsApp para você não travar na hora de executar sozinha.</span>
+          </li>
+        </ul>
+
+        <div class="text-center border-t border-dark/15 pt-8">
+          <p class="text-sm md:text-base uppercase tracking-widest text-dark/60 mb-2">Investimento</p>
+          <p class="text-2xl md:text-3xl font-semibold mb-8">
+            R$ 2.000,00 à vista <span class="block md:inline text-base md:text-lg font-medium text-dark/70 mt-1 md:mt-0">(ou parcelado no cartão de crédito)</span>
+          </p>
+
+          <a id="formulario" href="#"
+             class="cta-btn inline-block bg-dark text-light text-base md:text-lg font-medium px-8 py-4 rounded-md w-full sm:w-auto">
+            Preencher formulário de aplicação
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOBRA 5: QUEM VAI TE GUIAR ===================== -->
+  <section class="px-6 md:px-12 bg-light text-dark">
+    <div class="max-w-4xl mx-auto py-16 md:py-24">
+      <div class="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 md:gap-14 items-start">
+
+        <!-- FOTO: substitua o src abaixo pela foto da Duda -->
+        <img src="SUBSTITUA_PELA_FOTO_DA_DUDA.jpg" alt="Duda, fundadora da Atria"
+             class="w-40 h-40 md:w-full md:h-auto aspect-square object-cover rounded-full md:rounded-lg mx-auto md:mx-0 border border-dark/15">
+
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-6">
+            Prazer, Duda.
+          </h2>
+
+          <div class="space-y-5 text-base md:text-lg leading-relaxed text-dark/90">
+            <p>Sou empresária e estrategista de anúncios no campo de batalha desde 2022.</p>
+            <p>Ao longo da minha jornada, já analisei mais de 10.000 criativos e gerenciei mais de 7 dígitos em investimentos para os meus clientes.</p>
+            <p>Criei a ATRIA porque cansei de ver empreendedoras incríveis deixando dinheiro na mesa por medo de anúncios ou por não entenderem o "idioma" difícil dos gestores de tráfego.</p>
+            <p>Meu objetivo aqui não é te dar aulas teóricas. É sentar com você, aplicar a inteligência de quem vive o mercado todos os dias e estruturar a sua atração de clientes de forma simples, direta e lucrativa.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="px-6 md:px-12 border-t border-dark/10">
+    <div class="max-w-6xl mx-auto py-10 flex flex-col items-center gap-2 text-center">
+      <!-- LOGO: use aqui a versão escura/original da logo, já que o fundo do rodapé é claro -->
+      <img src="SUBSTITUA_PELO_CAMINHO_DA_LOGO_ATRIA.png" alt="Atria" class="h-6 w-auto opacity-80 mb-2">
+      <p class="text-sm text-dark/60">© Atria — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
